@@ -1,4 +1,4 @@
-#ifndef INCL_GUARDS
+#ifndef INCL_GUARDS // if not defined
 #define INCL_GUARDS
 
 void function();

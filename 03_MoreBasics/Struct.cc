@@ -39,7 +39,7 @@ void greet_permission_level(PermissionLevel level)
         break;
 
     default:
-      std::cout << "UNKNOWN! Error!" << std::endl;
+        std::cout << "UNKNOWN! Error!" << std::endl;
         break;
     }
 }
@@ -58,7 +58,6 @@ int main()
     UserData user_peter;
     user_peter.name = "Peter";
     user_peter.id = 10801545;
-
 
     return 0;
 }
