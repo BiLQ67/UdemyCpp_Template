@@ -27,11 +27,11 @@ int main()
     print_vector_info(my_vector);
     print_vector(my_vector);
 
-    int first = my_vector.front(); // ist das erste Element
+    int first = my_vector.front(); // the first Element
     int first2 = my_vector[0];
     std::cout << first << " " << first2 << std::endl;
 
-    int last = my_vector.back(); // Ist das letzte Element
+    int last = my_vector.back(); // the last Element
     int last2 = my_vector[my_vector.size() - 1];
     std::cout << last << " " << last2 << std::endl;
 
@@ -39,7 +39,7 @@ int main()
     std::cout << *array << std::endl;
 
     std::vector<int>::iterator begin = my_vector.begin();
-    std::vector<int>::iterator end = my_vector.end(); // der Wert nach dem letzten gültigen wert
+    std::vector<int>::iterator end = my_vector.end(); // one over the value from the last real value
 
     std::cout << *begin << std::endl;
     std::cout << *end << std::endl;
