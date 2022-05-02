@@ -4,6 +4,7 @@
 
 #include "exercise.h"
 
+
 int main()
 {
     // Exercise 1
@@ -37,6 +38,7 @@ int main()
     std::cout << std::endl;
 
     // Exercise 3
+
     double temp = row_max_vec[2];
     row_max_vec[2] = row_max_vec[1];
     row_max_vec[1] = temp;
