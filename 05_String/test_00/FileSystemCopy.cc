@@ -1,7 +1,6 @@
 #include <filesystem>
 #include <iostream>
 
-
 namespace fs = std::filesystem;
 
 int main()
@@ -10,7 +9,7 @@ int main()
     fs::path current_file_path = fs::current_path();
     current_file_path /= "FileSystem2.cc";
 
-    for (auto it = fs::directory_iterator(current_path); it != fs::directory_iterator{}; it++)
+    for (auto it = fs::directory_iterator(current_path); it != fs::directory_iterator{}; ++it)
     {
         std::cout << *it << std::endl;
     }
@@ -32,6 +31,4 @@ int main()
     {
         fs::copy_file(current_file_path, new_file_path);
     }
-
-    return 0;
 }
