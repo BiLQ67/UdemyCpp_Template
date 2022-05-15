@@ -16,6 +16,7 @@ int main()
     friends["Peter"] = std::pair<int, int>(54, 70);
     friends["Kathrin"] = std::pair<int, int>(30, 60);
     friends["Lisa"] = std::pair<int, int>(26, 65);
+    friends["Fabian"] = std::pair<int, int>(27, 72);
 
     // Exercise 2
     std::string oldest_friend = get_oldest_friend(friends);
