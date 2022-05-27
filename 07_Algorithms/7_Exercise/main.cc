@@ -14,11 +14,19 @@ int main()
     std::random_device gen;
     std::bernoulli_distribution dist(0.5);
 
-    BinaryArray target(20, false);
-    // ...
+    BinaryArray target(20, 0);
+    std::generate(target.begin(), target.end(), [&] { return dist(gen); });
+
+    /*std::mt19937 random_generator{gen()};
+    std::uniform_int_distribution<in#t> random_distribution{0, 1};
+
+    for (std::size_t i = 0; i < target.size(); i++)
+    {
+        target[i] = random_distribution(random_generator);
+    }*/
 
     BinaryArray input(target.begin(), target.end());
-    // ...
+    std::shuffle(input.begin(), input.end(), std::default_random_engine(42));
 
     for (std::size_t i = 0; i < target.size(); ++i)
     {
